@@ -89,9 +89,14 @@ header nav ul li a{
 .contact-form .btn{
     color: #fbfbfb;
 }
-.contact-form .errors p, .register-form form .errors p{
+
+.contact-form .error-msg{
     font-family: var(--font-secondary);
+    background-color: rgb(4, 162, 4);
+    color: var(--bg-white);
     font-weight: 700;
     text-align: center;
     padding: 10px;
+    margin: 10px 0;
+    display: none;
 }
