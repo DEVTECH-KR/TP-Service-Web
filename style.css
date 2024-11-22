@@ -1,0 +1,97 @@
+/*--------------------------------------------------------------
+# CSS FILE
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+:root{
+    /* Backgrou Color */
+    --bg-white: #fff;
+
+    /* Text Color */
+    --primary-text: #072c77;
+    --secondary-text: #0664f0;
+    --dark-color: #03262c;
+
+    /* Font family */
+    --font-primary: "Lato", sans-serif;
+    --font-secondary: "Barlow", sans-serif;
+}
+
+header{
+    padding: 20px;
+    background-color: var(--primary-text);
+    color: var(--bg-white);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li{
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--bg-white);
+}
+
+/*--------------------------------------------------------------
+# CONTACT PQGE
+--------------------------------------------------------------*/
+
+.contact-form .col-12 button{
+    background-color: var(--dark-color);
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+}
+
+.contact-form .col-12 button:hover{
+    background-color: var(--primary-text);
+}
+
+/* .contact-form .errors{
+    padding: 0;
+} */
+
+.contact-form .hide-bloc,
+#login-form .hide-bloc{
+   display: none; 
+}
+
+.contact-form .show-bloc,
+#login-form .show-bloc{
+   display: block; 
+}
+.contact-form .btn{
+    color: #fbfbfb;
+}
+.contact-form .errors p, .register-form form .errors p{
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
