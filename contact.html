@@ -16,21 +16,45 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>  
-    
-  <header>
-    <nav>
-      <h2>Service Web</h2>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header>   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">DEV-MARKET</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
   </header>
+  <div class="container-fluid banner">
+  </div>
+
+  <div class="getStarted">
+    <h1>Contact <span>us over here</span></h1>
+    <p class="introduction">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+      amet consectetur adipisicing elitrem ipsum dolor sit
+      ipsum dolor sit amet consectetur adipisicing elit.  
+    </p>
+  </div>
 
   <div class="container-fluid">
-      <div class="container">
+      <div class="container mt-5">
           <div class="col-6 contact-form m-5">
-              <h3>Pour plus d'infos, contactez-nous!</h3>
               <form action="" method="post" id="contact-form-bloc">
                 <div class="mb-3">
                   <input type="text" class="form-control" name="name" placeholder="Your name" id="name">
@@ -53,11 +77,12 @@
               </form>
             </div>
       </div>
-      <p>
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/25767651523" target="_blank"> 
-          Rejoignez-nous vite fait sur whatsapp
+      <div class="contact-wtsp">
+        <a href="https://wa.me/25767651523" target="_blank" class="btn btn-success link-text btn-whatsapp">
+          <i class="bi bi-whatsapp"></i>
+          Chat on WhatsApp
         </a>
-      </p>
+      </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>

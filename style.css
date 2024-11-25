@@ -31,7 +31,7 @@
     --font-secondary: "Barlow", sans-serif;
 }
 
-header{
+/* header{
     padding: 20px;
     background-color: var(--primary-text);
     color: var(--bg-white);
@@ -47,17 +47,64 @@ header nav ul{
     justify-content: space-between;
     list-style: none;
 }
+*/
 
-header nav ul li{
-    margin-left: 20px;
-    font-size: 1.2em;
-}
-
-header nav ul li a{
+header nav a{
     text-decoration: none;
+    font-size: 1.2em;    
     color: var(--bg-white);
 }
 
+.banner{
+    background: linear-gradient(to top, rgba(16, 15, 15, 0.668), rgba(16, 16, 16, 0.251), rgba(16, 16, 16, 0.247)), url("https://img.freepik.com/free-photo/blurred-unfocused_1203-1306.jpg?t=st=1732525821~exp=1732529421~hmac=13c4691fbb209a4f5b853596ad33b28aa03e20a9f03dbe960b6f8b925ab8b4df&w=826");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    max-width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+
+.getStarted{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 30vw;
+    color: var(--bg-white);
+    padding-bottom: 10px;
+}
+
+.getStarted h1{
+    font-weight: bolder;
+    color: #ff0f5b;
+    background-color: #080808;
+    margin-bottom: 10px;
+}
+
+.getStarted h1 span{
+    color: #fbfbfb;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.261);
+}
+@media (max-width: 701px){
+    .banner{
+        width: auto;
+        background-position: center;
+    }
+    .getStarted{
+        width: 100%;
+        position: relative;
+        top: -320px;
+        left: 0px;
+        padding: 20px;
+    }
+}
 /*--------------------------------------------------------------
 # CONTACT PQGE
 --------------------------------------------------------------*/
@@ -100,3 +147,5 @@ header nav ul li a{
     margin: 10px 0;
     display: none;
 }
+
+
